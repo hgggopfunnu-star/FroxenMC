@@ -1,1 +1,14 @@
-
+{
+  "name": "froxenmc-bot",
+  "version": "1.0.0",
+  "description": "FroxenMC Official Discord Bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "FroxenMC",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.14.1"
+  }
+}
