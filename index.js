@@ -10,17 +10,17 @@ client.once("ready", () => {
     console.log(`✅ FroxenMC Bot Online: ${client.user.tag}`);
 
     client.user.setPresence({
-        status: "online", // online / idle / dnd / invisible
+        status: "online",
         activities: [
             {
-                name: "game.blockhost.cloud",
-                type: ActivityType.Watching
+                name: "FroxenMC Network",
+                type: ActivityType.Playing
             }
         ]
     });
 });
 
-// error protection (good for Railway)
+// Railway crash protection
 process.on("unhandledRejection", console.error);
 process.on("uncaughtException", console.error);
 
